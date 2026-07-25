@@ -8,4 +8,6 @@ jobs:
         run: |
           echo "this is line1"
           echo "this is line2"
-          echo $pwd
+          echo "${{ vars.my_name }}"
+          echo "${{ secrets.docker_password }}"
+          echo "${{pwd}}"
