@@ -1,0 +1,18 @@
+name: Hello World 
+on:
+  push:
+    branches:
+    - main
+    - feature/pu_pldemo
+    - 'releases/**'
+  pull_request:
+    branches:
+    - main
+    - feature/pu_pldemo
+    - 'releases/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the job
+        run: echo "build the job"
