@@ -10,4 +10,4 @@ jobs:
           echo "this is line2"
           echo "${{ vars.my_name }}"
           echo "${{ secrets.docker_password }}"
-          echo "${{pwd}}"
+        
