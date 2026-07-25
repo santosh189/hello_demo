@@ -2,11 +2,11 @@ name: Hello World
 on:
   push:
     - main
-    - branch
+    - feature/pu_pldemo
     - 'releases/**'
   pull_request:
     - main
-    - develop
+    - feature/pu_pldemo
     - 'releases/**'
 jobs:
   build:
