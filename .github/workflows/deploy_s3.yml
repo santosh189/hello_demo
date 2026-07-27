@@ -1,0 +1,14 @@
+name: github checkout action 
+on: push 
+jobs:
+  action-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v4
+      - name: configure aws credentials 
+        uses: aws-actions/configure@v4 
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret_access_key_id: ${{ secrets.AWS_SECRET_ACCESS_KEY_ID }} 
+          aws-region: ap-south-1
